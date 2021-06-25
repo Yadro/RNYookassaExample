@@ -181,6 +181,12 @@ android {
 
         }
     }
+
+    packagingOptions {
+        // To fix issue:
+        // More than one file was found with OS independent path 'META-INF/ui-lib_release.kotlin_module'.
+        exclude 'META-INF/*.kotlin_module'
+    }
 }
 
 dependencies {

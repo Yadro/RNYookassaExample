@@ -1,5 +1,5 @@
---- android/src/main/java/com/arng/yookassa/YookassaModule.java	(revision 94c8e2b88ac02e07bd8116bfac120a4ccc3160ca)
-+++ android/src/main/java/com/arng/yookassa/YookassaModule.java	(date 1624543775516)
+--- a/android/src/main/java/com/arng/yookassa/YookassaModule.java	(revision 94c8e2b88ac02e07bd8116bfac120a4ccc3160ca)
++++ b/android/src/main/java/com/arng/yookassa/YookassaModule.java	(date 1624616416707)
 @@ -18,16 +18,16 @@
  import com.facebook.react.bridge.WritableMap;
  import com.facebook.react.bridge.WritableNativeMap;
@@ -27,3 +27,13 @@
 
  import java.math.BigDecimal;
  import java.text.NumberFormat;
+@@ -151,8 +151,7 @@
+         }
+         try {
+
+-//        UiParameters uiParameters = new UiParameters(true, new ColorScheme(Color.rgb(183, 134, 252)));
+-        Intent intent = Checkout.createTokenizeIntent(reactContext, parameters, tParameters);
++        Intent intent = Checkout.createTokenizeIntent(reactContext, parameters, new TestParameters(true, false));
+         getCurrentActivity().startActivityForResult(intent, REQUEST_CODE_TOKENIZE);
+
+         } catch (Exception ex) {
