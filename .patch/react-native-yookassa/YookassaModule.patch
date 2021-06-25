@@ -1,0 +1,29 @@
+--- android/src/main/java/com/arng/yookassa/YookassaModule.java	(revision 94c8e2b88ac02e07bd8116bfac120a4ccc3160ca)
++++ android/src/main/java/com/arng/yookassa/YookassaModule.java	(date 1624543775516)
+@@ -18,16 +18,16 @@
+ import com.facebook.react.bridge.WritableMap;
+ import com.facebook.react.bridge.WritableNativeMap;
+
+-import ru.yoo.sdk.kassa.payments.Amount;
+-import ru.yoo.sdk.kassa.payments.Checkout;
+-import ru.yoo.sdk.kassa.payments.GooglePayParameters;
+-import ru.yoo.sdk.kassa.payments.PaymentMethodType;
+-import ru.yoo.sdk.kassa.payments.PaymentParameters;
+-import ru.yoo.sdk.kassa.payments.SavePaymentMethod;
+-import ru.yoo.sdk.kassa.payments.MockConfiguration;
+-import ru.yoo.sdk.kassa.payments.SavedBankCardPaymentParameters;
+-import ru.yoo.sdk.kassa.payments.TestParameters;
+-import ru.yoo.sdk.kassa.payments.TokenizationResult;
++import ru.yoomoney.sdk.kassa.payments.checkoutParameters.Amount;
++import ru.yoomoney.sdk.kassa.payments.Checkout;
++import ru.yoomoney.sdk.kassa.payments.checkoutParameters.GooglePayParameters;
++import ru.yoomoney.sdk.kassa.payments.checkoutParameters.PaymentMethodType;
++import ru.yoomoney.sdk.kassa.payments.checkoutParameters.PaymentParameters;
++import ru.yoomoney.sdk.kassa.payments.checkoutParameters.SavePaymentMethod;
++import ru.yoomoney.sdk.kassa.payments.checkoutParameters.MockConfiguration;
++import ru.yoomoney.sdk.kassa.payments.checkoutParameters.SavedBankCardPaymentParameters;
++import ru.yoomoney.sdk.kassa.payments.checkoutParameters.TestParameters;
++import ru.yoomoney.sdk.kassa.payments.TokenizationResult;
+
+ import java.math.BigDecimal;
+ import java.text.NumberFormat;

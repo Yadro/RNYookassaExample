@@ -1,0 +1,20 @@
+--- android/build.gradle	(revision 94c8e2b88ac02e07bd8116bfac120a4ccc3160ca)
++++ android/build.gradle	(date 1624543775500)
+@@ -64,7 +64,6 @@
+     repositories {
+         jcenter()
+         mavenCentral()
+-        maven { url 'https://dl.bintray.com/yoomoney/maven' }
+     }
+ }
+
+@@ -87,8 +86,8 @@
+ dependencies {
+     //noinspection GradleDynamicVersion
+     implementation 'com.facebook.react:react-native:+'  // From node_modules
+-	implementation 'ru.yoo.sdk.kassa.payments:yookassa-android-sdk:5.0.1' // Модуль ЮКасса
+-    implementation "ru.yoo.sdk.auth:auth:1.0.35" // sdk авторизации для платежей из кошелька
++	implementation 'ru.yoomoney.sdk.kassa.payments:yookassa-android-sdk:6.0.2' // Модуль ЮКасса
++    implementation 'ru.yoomoney.sdk.auth:auth:1.2.8' // sdk авторизации для платежей из кошелька
+     implementation fileTree(dir: "libs", include: ["*.aar"])
+ }
